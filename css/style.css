@@ -1,0 +1,138 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-image: url(../img/veil.png);
+    font-size: 100%;
+    display: block;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 1.2rem;
+}
+
+img {
+    width: 350px;
+    padding-top: 2rem;
+    margin: 1rem;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-small;
+    display: flex;
+    color: black;
+    background-image: linear-gradient(to right, #009440, #009571, #009399, #008db1, #0085b8, #218cc0, #3392c7, #4199cf, #1db2e1, #00cbec, #00e3f1, #42fbef);
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+  /*HEADER*/
+header {
+    display: flex;
+    padding: 0.5rem;
+    background-image: linear-gradient(to right, #009440, #009571, #009399, #008db1, #0085b8, #218cc0, #3392c7, #4199cf, #1db2e1, #00cbec, #00e3f1, #42fbef);
+    align-items:baseline;
+    justify-content: space-around;
+    
+}
+
+header .header__logo {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 30%;
+}
+
+/*Main*/
+
+.container {
+    max-width: 1200px ;
+    margin: 0 auto ;
+    display: flex;
+    flex-direction:row;
+    justify-content: center
+}
+
+/*GALLERY*/
+
+.gallery {
+    display: flex;
+}
+
+.gallery .gallery__img {
+    display: flex;
+    margin: 40px 20px;
+    justify-content: center
+}
+
+.gallery .gallery__img:nth-of-type(1):hover {
+    transform: scale(1.1);
+ }
+
+ .gallery .gallery__img:nth-of-type(2):hover {
+    transform: scale(1.1);
+ }
+
+ .gallery .gallery__img:nth-of-type(3):hover {
+    transform: scale(1.1);
+ }
+
+p {
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: baseline;
+    
+} 
+
+
+
+.menu {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu .menu__link {
+    font-size: 1em;
+    padding: 1rem 1.2rem;
+}
+
+.menu .menu__link:hover {
+    color: white;
+    background: linear-gradient(to top, rgb(0, 86, 57), rgb(26, 14, 80));
+}
+
+
+
+
+
+
+ #grilla {
+     display: grid;
+     grid-template-areas: 
+     "nav header header";
+ }
+
+ @media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    }
