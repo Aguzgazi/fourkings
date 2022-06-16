@@ -69,6 +69,22 @@ header .header__logo {
     justify-content: center
 }
 
+.menu {
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu .menu__link {
+    font-size: 1em;
+    padding: 1rem 1.2rem;
+}
+
+.menu .menu__link:hover {
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.501));
+}
+
 /*GALLERY*/
 
 .gallery {
@@ -78,7 +94,8 @@ header .header__logo {
 .gallery .gallery__img {
     display: flex;
     margin: 40px 20px;
-    justify-content: center
+    justify-content: center;
+    flex-direction: column;
 }
 
 .gallery .gallery__img:nth-of-type(1):hover {
@@ -101,38 +118,16 @@ p {
     
 } 
 
-
-
-.menu {
-    display: flex;
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.menu .menu__link {
-    font-size: 1em;
-    padding: 1rem 1.2rem;
-}
-
-.menu .menu__link:hover {
-    color: white;
-    background: linear-gradient(to top, rgb(0, 86, 57), rgb(26, 14, 80));
-}
-
-
-
-
-
-
  #grilla {
      display: grid;
      grid-template-areas: 
      "nav header header";
  }
 
- @media screen and (max-width: 480px) {
+ @media (max-width: 480px) {
     header {
         flex-direction: column;
         gap: 2rem;
     }
     }
+    
